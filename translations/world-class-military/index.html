@@ -1,0 +1,416 @@
+﻿<html dir="ltr">
+<head>
+    <meta charset="utf-8"></meta>
+    <title>Realizing the Dream of Building a World-Class Military Force _ _ Jiefant Daily - China</title>
+
+    <meta name="description" content="改革，是实现中国梦强军梦的时代要求，是强军兴军的必由之路，也是决定军队未来的关键一招。"></meta>
+    <meta name="keywords" content="强军;李宣良;梅常伟;王经国;"></meta>
+  <script type="text/javascript" src="http://images.jfdaily.com/jiefang/images/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://images.jfdaily.com/jiefang/images/showEpaperPanel.js"></script>
+<script src="http://u.jfdaily.com/public/js/ajaxf.js" language="javascript"></script> 
+<script src="http://u.jfdaily.com/public/js/js.js" language="javascript"></script>
+<!--点击量测试-->
+<script>$(function(){var iFe=$('<img src="http://180.153.97.219:8081/all.asp?articleid='+$("#newsid").val()+'&isWeb=1" />')})</script>
+<!--点击量测试-->
+    <link rel="stylesheet" href="http://images.jfdaily.com/jiefang/images/home.css" type="text/css"></link>
+
+<style type="text/css">#mainContent img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+<script language="JavaScript">
+function trsform_onsubmit() {	
+	    var SQL="";//最终提交词
+	    var search = document.trsform.search.value;
+               	    	    
+	     if(search==""){
+	     alert("检索词不能为空");
+	        return false;}	
+	    if(search.length>0){
+	    search = search.replace( /(^[\s??]*)|([\s??]*$)/g, "");
+	   	search = search.replace(/\\-/g,'`').replace(/`/g,'\\-');
+	   	search = search.replace(/'/g,'\\\'');
+              }//过滤特殊字符
+  	    document.trsform.searchword.value=search ; 
+             return true;	
+}
+</script>
+<script language="JavaScript">
+function trsform_onsubmit() {	
+	    var SQL="";//最终提交词
+	    var search = document.trsform.search.value;
+               	    	    
+	     if(search==""){
+	     alert("检索词不能为空");
+	        return false;}	
+	    if(search.length>0){
+	    search = search.replace( /(^[\s??]*)|([\s??]*$)/g, "");
+	   	search = search.replace(/\\-/g,'`').replace(/`/g,'\\-');
+	   	search = search.replace(/'/g,'\\\'');
+              }//过滤特殊字符
+  	    document.trsform.searchword.value=search ; 
+             return true;	
+}
+
+//function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+//	if(_nPageCount == null || _nPageCount<=1){
+//		return;
+//	}
+//	var nCurrIndex = _nCurrIndex || 0;
+//	document.write("第&nbsp;&nbsp;");
+//	if(nCurrIndex == 0)
+//		document.write("1&nbsp;&nbsp;");
+//	else
+//		document.write("<a href=\""+_sPageName+"."+_sPageExt+"\" >1</a>&nbsp;&nbsp;");
+//
+//	for(var i=1; i<_nPageCount; i++){
+//		if(nCurrIndex == i)
+//			document.write(""+(i+1) + "&nbsp;&nbsp;");
+//		else
+//			document.write("<a href=\""+_sPageName+"_" + i + "."+_sPageExt+"\" >"+(i+1)+"</a>&nbsp;&nbsp;");
+//	}
+//	document.write("页");
+//}
+	
+
+function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+
+	var pL = "";
+	var pageIndex=_nCurrIndex+1;
+	document.write("第");
+	if(pageIndex<7){
+		if(_nPageCount>=10){
+			for(var i=0;i<10;i++){
+				if(pageIndex==(i+1)){
+					pL+="&nbsp;&nbsp;"+pageIndex;
+					continue;
+				}
+				if(i==0&&i!=_nCurrIndex){
+					pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"."+_sPageExt+"\">1</a>";
+				}else{
+					pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+ (i+1) +"</a>";
+				}
+			}
+		}else{
+			for(var i=0;i<_nPageCount;i++){
+				if(pageIndex==(i+1)){
+					pL+="&nbsp;&nbsp;"+pageIndex;
+					continue;
+				}
+				if(i==0&&i!=_nCurrIndex){
+					pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"."+_sPageExt+"\">1</a>";
+				}else{
+					pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+ (i+1) +"</a>";
+				}
+			}
+		}
+	}else if(_nPageCount-pageIndex<7){
+		if(_nPageCount>10){
+			document.write("&nbsp;&nbsp;<a href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;&nbsp;...&nbsp;&nbsp;");
+		}
+		var num=_nPageCount-8;
+		if(num<=0){
+			num=1;
+		}
+		for(var i=num;i<=_nPageCount;i++){
+			if(pageIndex==(i)){
+				pL+="&nbsp;&nbsp;"+pageIndex;
+				continue;
+			}
+				if(i==1){
+					pL += "&nbsp;&nbsp;<a href=\""+_sPageName + "."+_sPageExt+"\">"+ i +"</a>";
+					continue;
+				}
+				pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\">"+ i +"</a>";
+		}
+	}else{
+		document.write("&nbsp;&nbsp;<a href=\""+_sPageName+"."+_sPageExt+"\">1</a>&nbsp;&nbsp;...&nbsp;&nbsp;");
+		for(var i=pageIndex-4;i<pageIndex;i++){
+			pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\">"+ i +"</a>";
+		}
+		pL += "&nbsp;&nbsp;"+pageIndex;
+		for(var i=pageIndex+1;i<pageIndex+5;i++){
+			pL += "&nbsp;&nbsp;<a href=\""+_sPageName+"_" + (i-1) + "."+_sPageExt+"\">"+ i +"</a>";
+		}
+	}
+		
+	document.write(pL);
+	if(_nPageCount-(_nCurrIndex+1)>6&&_nPageCount>10){
+		document.write("&nbsp;&nbsp;...&nbsp;&nbsp;<a href=\""+_sPageName+"_" + (_nPageCount-1) + "."+_sPageExt+"\">"+ _nPageCount +"</a>");
+	}
+	document.write("&nbsp;&nbsp;页");
+}
+</script>
+<!--docid=2541710-->
+</head>
+<body dir="ltr">
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"S5J4j1a4ZP00gy", domain:"jfdaily.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=S5J4j1a4ZP00gy" height="1" width="1" alt="" style="display:none"></noscript>
+<!-- End Alexa Certify Javascript -->
+    <div id="wrapper">
+        <div id="header">
+           <ul class="nav">
+                <li><a href="http://www.jfdaily.com" class="first">Jiefang Daily Home</a></li>
+                <li><a href="http://jfdaily.com/guonei/bw/201611/t20161127_2541710.html#" id="to_subMenu01">Newsletter</a></li>
+                <li><a href="http://www.jfdaily.com/shizh/index.html">Politics</a></li>
+                <li><a href="http://www.jfdaily.com/caijing/index.html">Finance</a></li>
+                <li><a href="http://www.jfdaily.com/minsheng/index.html">People in Society</a></li>
+                <li><a href="http://www.jfdaily.com/kejiao/index.html">Science and Education</a></li>
+                <li><a href="http://www.jfdaily.com/shehui/index.html">Society</a></li>
+                <li><a href="http://www.jfdaily.com/guonei/index.html">China</a></li>
+                <li><a href="http://www.jfdaily.com/guoji/index.html">International</a></li>
+                <li><a href="http://www.jfdaily.com/wenyu/index.html">Entertainment</a></li>
+                <li><a href="http://www.jfdaily.com/tiyu/index.html">Sport</a></li>
+                <li><a href="http://www.jfdaily.com/pl/index.html">Editorial</a></li>
+                <li><a href="http://www.jfdaily.com/rexian/index.html">Support</a></li>
+                <li><a href="http://www.jfdaily.com/huodong/index.html">Outreach</a></li>
+                <li><a href="http://www.jfdaily.com/qushi/index.html">Regional</a></li>
+                <li><a href="http://www.jfdaily.com/health/index.html">Health</a></li>
+                <li><a href="http://www.jfdaily.com/life/index.html">Lifestyle</a></li>
+                <li><a href="http://www.jfdaily.com/shendu/index.html">In-Depth</a></li>
+                <li><a href="http://www.jfdaily.com/yexian/index.html">Nightline</a></li>
+                <li><a href="http://www.jfdaily.com/vision/index.html">Vision</a></li>
+                
+                <li><a href="http://www.jfdaily.com/zt/index.html">Special Topics</a></li>
+              
+            </ul>
+            <div id="subMenu01" style="display:none">
+                <ul>
+                    <li><a href="http://newspaper.jfdaily.com/jfrb/default.htm">Jiefang Daily</a></li>
+                    <li><a href="http://wenhui.news365.com.cn/default_pdf.html">Wenweipo</a></li>
+                    <li><a href="http://xmwb.xinmin.cn">Xinmin Evening News</a></li>
+                    <li><a href="http://www.shanghaidaily.com">Shanghai Daily</a></li>
+                    <li><a href="http://newspaper.jfdaily.com/xwcb/default.htm">Shanghai Morning Post</a></li>
+                    <li><a href="http://www.dfdaily.com">Oriental Morning Post</a></li>
+                    <li><a href="http://newspaper.jfdaily.com/sjfwdb/default.htm">Shanghai Times</a></li>
+                    <li><a href="http://whdszb.news365.com.cn">Wenhui Reader's Weekly</a></li>
+                    <li><a href="http://newspaper.jfdaily.com/isdb">I Times</a></li>
+                    <li><a href="http://xmdt.news365.com.cn">Metro Weekly</a></li>
+                    <li><a href="http://newspaper.jfdaily.com/fdcsb/default.htm">Realty Times</a></li>
+                    <li><a href="http://shequban.news365.com.cn">Xinmin Evening News - Community Edition</a></li>
+                    <li><a href="http://newspaper.jfdaily.com/shfzb/default.htm">Shanghai Legal Daily</a></li>
+                    <li><a href="http://jiating.news365.com.cn">Family Week - Community Edition</a></li>
+                    <li><a href="http://114.80.76.143:8080/PaperViewerSystem/">Community Morning News</a></li>
+                    <li><a href="http://www.sport1.cn">Oriental Sports Daily</a></li>
+                    <li><a href="http://www.sspost.com.cn">Shanghai Students' Post</a></li>
+                    <li><a href="http://www.bundpic.com">The Bund</a></li>
+                    <li><a href="http://wenxue.news365.com.cn">The Literary Gazette</a></li>
+                    <li><a href="http://www.pdtimes.com.cn">Pudong Times</a></li>
+                    <li><a href="http://trs.jfdaily.com/zbsh_1/index.htm">Shanghai CPC Newsletter</a></li>
+                    <li><a href="http://www.xinminweekly.com.cn">Xinmin Weekly</a></li>
+                    <li><a href="http://journalist.news365.com.cn">Shanghai Reporter</a></li>
+                    <li><a href="http://xinduxie.news365.com.cn">Wenhui Books</a></li>
+                    <li><a href="http://www.travelplus.cn">Travel and Leisure</a></li>
+                     <li><a href="http://newspaper.jfdaily.com/xwwb/html/2013-12/31/content_21489.htm">Shanghai Evening Post</a></li>
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+<div id="tipUser01"><div id="topNav"></div></div>
+            <p class="spaceH20px"></p>
+            <!-- AdSame ShowCode: 解放网 / 稿件页 / 顶部横幅 Begin -->
+<!-- 百度 -->
+<script type="text/javascript">
+/*顶部通栏960*90，创建于2014-6-11*/
+var cpro_id = "u1584599";
+</script>
+<script src="http://images.jfdaily.com/jiefang/images/c.js" type="text/javascript"></script><!-- 百度 -->
+<!-- AdSame ShowCode: 解放网 / 稿件页 / 顶部横幅 End -->
+            <div id="linkPathes">Location: <a href="http://www.jfdaily.com" target="_blank">Jiefang Daily Home</a> &gt; <a href="http://jfdaily.com/guonei/">China</a> </div>
+            <p class="clear"></p>
+        </div>
+
+        <div id="mainContent">
+<h2 class="bigsizeWeightNormal">
+ The Central Military Commission Reform Working Conference held over the past year deepened top-down advances in pushing forward national defense and military reform.
+</h2>
+            <h1 class="bigsize" id="topNewslong">
+                <!--title--> Realizing the Dream of Building a World-Class Military Force <!--/title--> 
+            </h1>
+<h2 class="bigsizeWeightNormal">
+ 
+</h2>
+            <p class="spaceH10px"></p>
+            <p class="color_666">Source: <span id="“source_baidu”"><a href="http://jfdaily.com/guonei/bw/201611/t20161127_2541710.html" target="_blank">Jiefang Daily</a></span> | <!--data--> <span id="pubtime_baidu">2016-11-27 10:32</span> <!--/data--> | Author: <span id="“author_baidu”">Li Xuanliang / Wangjing Guo / Mei Changwei</span></p>
+            <div class="tipLinks icon_hot">
+                <p class="descr"><span id="ico_pinglun"></span></p>
+            </div>
+<!--摘要不出现 -->
+ <!--
+            <p class="articleDescr">
+                改革，是实现中国梦强军梦的时代要求，是强军兴军的必由之路，也是决定军队未来的关键一招。
+            </p>
+ -->
+
+<div class="articleContent bigsizeWeightNormal"><!--content--><div class="TRS_Editor"><p align="center"><img alt="" src="http://images.jfdaily.com/jiefang/guonei/bw/201611/W020161127379679597095.jpg" oldsrc="W020161127379679597095.jpg"></p>
+<p align="center">　　A fleet of aircraft of the Air Force's Southern Command fly in close coordination.　The Xinhua News Agency (photo)   </p>
+　　Xinhua News Agency reporters Li Xuanliang and Wang Jingguo Mei Changwei<br>
+<br>
+　　Reform s realizing the needs of the times, which is achieving China's dream of a strong army; it is the only way of strengthening the army, and also it is the deciding factor of the military's future.<br>
+　　November 24, 2015, during the Reform Work Conference of the the Central Military Commission, President Xi issued a comprehensive mobilization order on implementing the strategy of strengthening the military., beginning a historical landmark of revolutionary change in the entirety of China's military.<br>
+　　Over the past year, there has an orderly implementation and solid progress of top-down deepening of defense and military reform. Under President Xi's major strategic leadership on reformation and strengthening the military and People's Armed Police, the military has summoned its majestic power of will in drafting a modern military qualifications exam.<br>
+<br>
+　　Wholehearted Support of Reform<br>
+<br>
+　　In dealing with the difficulties of reform, the first is gaining and forming consensus.<br>
+　　With the horn of reform sounded, the whole military has launched a wide campaign of ideological mobilization, specialized educational programs, and led guidance of public opinion. all in support of President Xi's policy decision and directives to unify thought and unify pace, taking into account political considerations and embracing a strategic global standpoint, the targeted direction is from President Xi's deep insight and China's deployment requirements, all permeating into the deep manifestation of forward reform.<br>
+　　PLA officers and soldiers all have agreed that this round of reform, with Comrade Xi at the helm of the Party Central Committee, is to focus on dealing with profound changes on the military, national, and global scales, to adhere to and develop Socialism with Chinese Characteristics, to achieve strategic advancement of military goals of the Party under new conditions. These goals mark monumental reform and a a historic starting point, for the military under the Party's leadership, 
+a pinnacle leap forward in China's laying a solid foundation for military and defense modernization for the next 20 to 30 years.<br>
+　　Officers and soldiers strongly feel that this reform establishes the general principles of the Central Military Commission regarding logistics pipelines, theatre of battle, and military installations, with the Central Military Commission and related organs shifting from a headquarters to a multi-sectoral system of command to strengthen the CMC's military leadership core and boost its strategic command... 
+placing the Party Central Committee and the Central Military Commission at the highest level of the organization and leadership of the military, with the Party commanding the gun in more solid organizational support and stable institutional security.<br>
+　　Thinking in place, action will be strong.Adherence to political discipline and regulation by all levels of the military, laying the stepping stone and grasping the hot iron in spirited patriotism, the Party shouts "Look at us!", marching forward, saying "On with us!" to fully demonstrate the Party's absolute loyalty and confidence of the reforms.<br>
+　　Late one night in January 2016, offices were lit bright in the military installations in Shenyang, Beijing, Lanzhou, Jinan, Nanjing, Guangzhou, and Chengdu.It's midnight. The establishment of military organizations according to the national administrative divisions, geographical location and strategic direction of the campaign and combat missions will enter the annals of the People's Liberation Army.However, within each of the military complexes, all military leaders and government officials remained at their posts, waiting for that historic moment to come.Even at these hours there were some large units of Party committees engaged in collective learning study sessions.<br>
+　　Great change, a great cause, the last fighter pilot overcoming the impossible and marching on.All levels of the army unswervingly adhere to the party's absolute leadership over the armed forces, resolutely safeguarding the chairman of the CMC and implementing the "Four Consciousnesses" responsibility system, especially establishing firm the Core Consciousness and Conformity Consciousness, never wavering from President Xi's decision to work resolutely on deployment requirements in accordance with President Xi's implementation.<br>
+　　In each theater of battle, in all military branches, the Central Military Commission authority departments and armed forces organizations held the first Party Congress to focus on education and training, army regiments, rocket brigades, strategic support troops, with all units carrying out theoretical study, political education, working staunchly preserve the core and firmly follow the line as the top priority.<br>
+　　With eyes on the army, leading cadres at all levels and the vast majority of officers and soldiers engage in in-depth study President Xi speeches, always putting the mission above all else, faithfully performing their duties, taking concrete actions to support the reform - from the midst emerge heroes - Zhang Chao, Shen Liangliang, Li Lei, Yang Shupeng, Liu Jingtai.<br>
+<br>
+　　Consciously Obey the Reform.  Struggle to Join the Reform<br>
+<br>
+　　This is the era of reforming exams, of theory, of interest, especially of politics.<br>
+　　The reform is not only structural but that of scale. Many troops face structural adjustment, transfer, dismissal, regional reassignment, reorientation, and retirement.How to choose? How can they contribute the most?The test is aimed at dealing with the majority of these troops' direct concerns<br>
+　　In the 89 glorious years of the People's Liberation Army, be it during the Reorganization and Rectification of the Chinese Revolutionary War, or the reduction of posts during the period of peace-building, swaths of soldiers obey in selfless dedication, time and time again the People's Liberation Army has achieved major transformation, forever advancing from victory to victory.<br>
+　　"Choose Righteousness, See the Fate of Loyalty."During this new age of reform, the quality has not abated in this next generation of revolutionary soldiers, doing what the Party desires, they aptly follow command, 
+march in formation listening to orders, form marks their loyalty to reform in the barracks and examination halls.<br>
+　　December 2, 2015, a paper order comes, Shanxi Army Brigade Number 27 and its corps became the first deployment under the reform readjustment.Thousands of vehicles and soldiers are on the move, silently relocating onward. People of the world cry out, "They're on the move - the People's Liberation Army listen to the command of the Party - the redness that flows in the genes of Socialism has not wavered!"<br>
+　　An Air Force unit thousands of miles away readies for transition, moving from Saibei southward to the frontier; hundreds of army cadres stationed in the Northwest travel day and night at utmost speed towards their new post in Sichuan province; paving the roads of the far-off military outposts, all full-heartedly dedicated to lifting the worries of reform... in the tie of reform, the troops reorganize and transfer posts and duties mindful of the shifting situation and never looking back.The whole military concentrate their efforts, the footsteps of their march clang onward, in formation towards steadfastness to promote reform in the land, reform measure after reform measure, with solid footing on the ground.<br>
+　　Within a few months, the Army leadership organs, the Rocket Corps and Strategic Support units were set up, all branches of the military adjusted to the policy of the Central Military Commission, with also the Five Theater Flags and Joint Logistics Force unveiled ... and readjustment of "The General Administration of Military Affairs, Theater Battle, the Primary Military Construction Projects" started to take shape. All projects went into full implementation aligned with the reforms in the policy of strengthening the military with landmark achievement. We have taken a key stride down path towards "Militarization with Chinese Characteristics".<br>
+<br>
+　　Actively Adapting to Reform, Pushing Forward Reform<br>
+<br>
+　　The new system needs new ideas and new thought. This is mandatory for the proposed reform. It is a major hurdle needing to be surpassed.<br>
+　　There has been smooth and efficient implementation of the new functions of this development path, with the entire leading military organs, especially the senior authorities, in carrying out the "New System, New Functions, and New Mission" in a debate to change the mindset and set paths of the inherit system, explore change of working styles, and ways to better adapt to the new system and perform new functions.<br>
+　　
+The core point of the reform is to make those able to fight, fight in victory.Under the new system, the standards of combative effectiveness have been firmly raised, with working goals realized from the extensive to the accurate, a stronger warfare atmosphere and focused warfare fighting for soldiers, active troops, and recruits alike.<br>
+　　Fighting in the main theater of battle is the top priority. marking a transformation in the main mode of military operation, moving towards more administration, military construction functions, peacetime thought promulgation, universal joint staff training, combined with readiness to organize and direct daily operations, disaster relieve, and other major military actions, thus creating high-quality pool of talent.<br>
+　　In the Northern Theater, hundreds of training cadres have been stationed to guide instruction, all only issued 10 documents, 9 security instructions - much more streamlined than before. The Central Theater holds the first Joint Command Exercise, and not even a minute is wasted when it comes to the transfer of war documents, and is regarded as immediate in military wartime terms.<br>
+　　Nearly one hundred army cadres gathered in Beijing to tackle the key issue of how to fulfill military construction projects and research tactical countermeasures, 
+resulting in a number of major outcomes; normalization of actual combat training of naval vessels of the far seas; air force use of the newest domestic fighter jets and large transport units in rapid formation of combat effectiveness; steady improvement of the Rocket Corps to achieve global warfare capability; all forces are adhering to the systemic integration, military and civilian integration, and the accelerated development of new combat forces.<br>
+　　Over the past year, leadership and command reform is a foregone conclusion. 
+bursting forth is a strong vitality and drive of armed forces in military training, performing rescue and flood disaster mission, and international peacekeeping to achieve the country's military objectives, to achieve the dream of building a world-class and reformed strong military, marching forward each step towards reality.<br>
+　　(Xinhua News Agency, Beijing, November 26th 2016)</div><!--/content--></div>
+    
+<p class="paging"><script language="JavaScript">
+								createPageHTML(1, 0, "t20161127_2541710", "html");	
+					</script>
+</p>
+ <p class="paging"><img src="http://images.jfdaily.com/jiefang/images/weiguan2weima.jpg"><br></p>
+ <p class="spaceH10px"></p>
+<a name="pinglun" id="pinglun"></a>
+        <p class="grayborder1px"></p>
+
+
+
+
+            <div id="messageEditor">
+               <input name="newsid" id="newsid" type="hidden" value="2541710">
+<input name="newsurl" id="newsurl" type="hidden" value="">
+<input name="newstitle" id="newstitle" type="hidden" value="建设世界一流军队，梦想正化为现实">
+<input name="newsdesc" id="newsdesc" type="hidden" value="改革，是实现中国梦强军梦的时代要求，是强军兴军的必由之路，也是决定军队未来的关键一招。">
+<div id="plk"></div>
+            </div>
+
+<!--百度广告1-->       
+<script type="text/javascript">
+/*640*60，创建于2014-4-21*/
+var cpro_id = "u1529563";
+</script>
+<script src="http://images.jfdaily.com/jiefang/images/c.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*640*60，创建于2014-4-21（2）*/
+var cpro_id = "u1529592";
+</script>
+<script src="http://images.jfdaily.com/jiefang/images/c.js" type="text/javascript"></script>
+
+<!--百度广告1-->
+
+
+
+<div id="messageLefted">
+    <ul>
+<div id="plinfo"></div>
+    </ul>
+</div>
+<!--海量相关阅读-->
+<style type="text/css"></style>
+<!--海量相关阅读样式-->
+
+            <div class="extendLinks2">
+                <h3>Related Reading</h3>
+                <ul class="newsList002"><!--海量延展阅读定位点--><div id="hl-RelationDiv"></div><!--海量延展阅读定位点--></ul>
+            </div>
+
+            <div id="picsNews">
+                <ul>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201611/t20161106_2514665.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201611/W020161106366525915085.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201611/t20161106_2514665.html">Dancing with the Clouds</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201610/t20161029_2504455.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201610/W020161029331660620538.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201610/t20161029_2504455.html">The Last Seafood at Tongchuan Market</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201607/t20160723_2368936.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201607/W020160723268650331129.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201607/t20160723_2368936.html">When we look back to the author Mao Dun, we ..</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201605/t20160529_2285526.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201605/W020160529339448222149.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201605/t20160529_2285526.html">A Taxidermist Says: I'm writing ...</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201604/t20160430_2247526.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201604/W020160430259732877678.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201604/t20160430_2247526.html">Female Grooms</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201609/t20160925_2460246.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201609/W020160925354508506295.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201609/t20160925_2460246.html">The "Big Fox" and His Bird ...</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201609/t20160918_2449431.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201609/W020160918259356099705.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201609/t20160918_2449431.html">Shanghai Tourism Festival - Stun and Fun</a>
+                    </li>
+                    <li>
+                        <a href="http://jfdaily.com/vision/tupian/201607/t20160731_2381448.html"><img height="120" src="http://images.jfdaily.com/jiefang/vision/tupian/201607/W020160731332702572225.jpg" width="150"></a> <a href="http://jfdaily.com/vision/tupian/201607/t20160731_2381448.html">Midway through the summer, the city "...</a>
+                    </li>
+                                   </ul>
+                <p class="clear"></p>
+            </div>
+
+<!--百度广告2-->       
+<script type="text/javascript">
+/*640*60，创建于2014-4-22（3）*/
+var cpro_id = "u1530984";
+</script>
+<script src="http://images.jfdaily.com/jiefang/images/c.js" type="text/javascript"></script>
+
+<!--百度广告2-->
+
+        </div>
+
+        <div id="sideContent">
+<iframe width="300" height="2550" src="http://jfdaily.com/index_106.html" frameborder="0" scrolling="no"></iframe>        </div>        <div class="clear"></div>
+<!--海量锚点插入js开始 -->
+<script type="text/javascript" src="http://www.jfdaily.com/hl/loadmain.js">
+</script>
+<!--海量相关阅读插入js结束-->
+<script type="text/javascript" src="http://images.jfdaily.com/jiefang/images/jquery-1.9.1.min.js"></script>
+<script src="http://u.jfdaily.com/public/js/ajaxf.js" language="javascript"></script> 
+<script src="http://u.jfdaily.com/public/js/js.js" language="javascript"></script>
+        <iframe width="100%" height="270" src="http://jfdaily.com/other/index_105.html" frameborder="0" scrolling="no"></iframe>
+  <p align="center">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5248242'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/stat.php%3Fid%3D5248242' type='text/javascript'%3E%3C/script%3E"));</script></p>    </div>
+<script src="http://cast.ra.icast.cn/p/?id=7170"></script>
+<!--网脉统计测试-->
+<noscript><img src="http://ta.trs.cn/c/1.gif?mpId=134&amp;jsoff=1" alt="" style="border:0"></noscript>
+                <script>
+                var _taq = _taq || [];
+                _taq.home = 'http://ta.trs.cn/c';
+                _taq.push(['_mpId', '134']);
+                _taq.push(['_cli', '1']);
+               (function(d, o, t) {
+	                 if (window.inTRSDesignMode) return;
+	                 var ma = d.createElement(o); ma.async = true; ma.commonresource="1"; ma.src = t;
+	                 var s = d.getElementsByTagName(o)[0]; s.parentNode.insertBefore(ma, s);
+                        })(document, 'script', 'http://ta.trs.cn/c/js/ta.js');
+                 </script>
+<!--网脉统计测试-->
+</body>
+</html>

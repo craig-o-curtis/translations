@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>C.O.C. Translations</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div id="app">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Craig O. Curtis Translations</a>
+      <!--<ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbadr Link</a></li>
+      </ul>-->
+
+      <!--<ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>-->
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    </div>
+  </nav>
+  
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+
+        <br><br>
+        <h1 class="header center red-text text-lighten-2">Latest Translations</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Understanding China, meme by meme</h5>
+        </div>
+        <br><br>
+
+    </div>
+
+    <div class="parallax"><img src="background-cyber-red.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+        <!-- Carousel -->
+        <div class="container"></div>
+          <div class="carousel" style="min-height:500px">
+            
+            <!-- Vue Projects Repeater -->
+            <div v-for="project in projects" class="carousel-item" style="top:-100px;width:40%;">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" v-bind:src="project.imgurl">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator red-text text-darken-4">
+                    {{project.title}}
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title red-text text-darken-4">
+                    Info
+                    <i class="material-icons right">close</i></span>
+
+                    <p class="lighten-2 red-text text-darken-4">
+                      {{project.gist}}
+                    </p>
+                  
+                    <a class="waves-effect red darken-4 waves-light btn"
+                      target="_blank"
+                      v-bind:href="project.translink">
+                      <!--<i class="material-icons left">link</i>-->
+                      Translation
+                    </a>
+
+                    <a class="waves-effect black darken-4 waves-light btn"
+                      target="_blank"
+                      href="http://it.jfdaily.com/guonei/bw/201611/t20161127_2541710.html">
+                      <!--<i class="material-icons left">link</i>-->
+                      Original
+                    </a>
+                    
+                </div>
+              </div>
+            </div> <!-- Vue Projects Repeater -->
+
+          </div>
+
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4">
+              <i class="material-icons">flash_on</i>
+            </h2>
+            <h5 class="center">Speedy translation</h5>
+
+            <p class="light">
+              I use the latest technology for human and machine translation, coupled with nearly 20 years of Mandarin Chinese language experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4">
+            <i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">A concept from the world of coding, I focus on making tranlations understandable for the audience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4">
+              <i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">10+ years in China, Summa Cum Laude Chinese, U.S. Government translation</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="profile-photo-00.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Me</h4>
+          <p class="left-align light">I've appeared on Chinese national tv programs 4 times and have helped tons and tons of people translate and interpret from both English and Chinese, and Chinese to English. It's not just about the words -- I bridge culture and meaning.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">不相信我的话，我无所谓把，我就继续好好地翻译有意思的文章</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer red darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">My Bio</h5>
+          <p class="grey-text text-lighten-4">
+            I have translated for companies in both the US and China, as well as provincial, state, and national government agencies in both countries.
+            <br />
+            I am also a website and app designer specializing in Front End technologies like HTML, CSS, and JavaScript.
+          </p>
+
+
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="mailto:craigocurtis@gmail.com">Email</a></li>
+            <li><a class="white-text" target="_blank" v-bind:href="linkedin">LinkedIn</a></li>
+            <li><a class="white-text" target="_blank" v-bind:href="github">Github</a></li>
+            <li><a class="white-text" target="_blank" v-bind:href="stackoverflow">Stack Overflow</a></li>
+            <li><a class="white-text" target="_blank" v-bind:href="plunker">Plunker</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by me with <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a> and <a class="red-text text-lighten-3" href="https://vuejs.org/">Vue.js</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+  </div>
+  </body>
+</html>
